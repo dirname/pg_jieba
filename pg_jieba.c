@@ -73,7 +73,7 @@ Datum jieba_reload_dict(PG_FUNCTION_ARGS);
 #define DICT_EXT "dict"
 #define MODEL_EXT "model"
 
-static void DefineCustomConfigVariables();
+static void DefineCustomConfigVariables(void);
 static void recompute_dicts_path(void);
 static char* extract_dict_list(const char *dictsString);
 static char* jieba_get_tsearch_config_filename(const char *basename, const char *extension);
